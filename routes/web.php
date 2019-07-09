@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/hike/{n}', function ($n) {
+    return view('hike')->with('id', intval($n));
 });

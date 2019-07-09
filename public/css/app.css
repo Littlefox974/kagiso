@@ -1,4 +1,34 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@charset "UTF-8";
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SF-Pro-Display-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SF-Pro-Display-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SF-Pro-Display-Heavy.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: bold;
+  src: url("/fonts/SF-Pro-Display-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/fonts/SF-Pro-Text-Regular.ttf");
+  font-weight: 500;
+}
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -34,7 +64,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -66,7 +96,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
@@ -6459,7 +6489,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -6584,7 +6614,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Nunito", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -11098,5 +11128,80 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.underlined-link {
+  font-family: "SF Pro Display";
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.61px;
+  line-height: 29px;
+  border-bottom: solid #FC4748;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 10px;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: "SF Pro Display";
+  font-weight: 300;
+  letter-spacing: 0.43px;
+}
+
+h2 {
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-weight: 300;
+  color: #FC4748;
+  letter-spacing: 0.45px;
+  line-height: 21px;
+}
+
+h3 {
+  color: #000000;
+  font-family: "SF Pro Display";
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: 1.16px;
+  line-height: 55px;
+}
+
+h4 {
+  height: 38px;
+  width: 280px;
+  color: #FFFFFF;
+  font-family: "SF Pro Display";
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 0.81px;
+  line-height: 38px;
+}
+
+p {
+  color: #6F7072;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.45px;
+  line-height: 30px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
