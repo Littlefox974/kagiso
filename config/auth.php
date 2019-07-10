@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Models\User::class,
         ],
 
         // 'users' => [
@@ -98,6 +98,20 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
         ],
+    ],
+
+        /*
+    |--------------------------------------------------------------------------
+    | Hike Providers
+    |--------------------------------------------------------------------------
+    |
+    */
+
+    'providers' => [
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Hike::class,
+        ]
     ],
 
 ];
