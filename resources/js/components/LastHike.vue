@@ -1,11 +1,11 @@
 <template>
     <div>
         <img class="header-img" src="img/desktop_parallax_background.jpg"/>
-        <div class="row">
-            <div class="offset-md-1 col-md-4">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-10">
                 <img class="hike-image" v-bind:src="hike.imageLink"/>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-10 mt-5 px-5">
                 <h2>A {{ hike.level }} hike</h2>
                 <h3>{{ hike.title }}</h3>
                 <p v-html="hike.description"></p>
@@ -34,6 +34,7 @@ export default {
             .then(response => {
                 console.log(response.data)
                 this.hike = response.data
+                this.hike.level = this.hike.level.toLowerCase()
             })
     }
 }
@@ -41,11 +42,6 @@ export default {
 <style lang="scss" scoped>
 
     @import '~@/app.scss';
-
-    .row {
-        display: flex;
-        align-items: center;
-    }
 
     .header-img {
         width:100%;
@@ -55,7 +51,6 @@ export default {
     
     .hike-image {
         width: 100%;
-        float: right;
     }
 
     h3 {
@@ -71,5 +66,21 @@ export default {
         color: black;
     }
 
+        @media only screen and (max-width: 768px) {
+
+            .header-img {
+                width: 250%;
+                clip-path: polygon(0px 30%, 100% 30%, 100% 83%, 0 83%);
+                margin: -35% 0 0 -100%;
+            }
+
+            .hike-image {
+                padding: 0 8% 0 8%;
+            }
+
+            h3, p {
+                width: unset;
+            }
+        }
     
 </style>

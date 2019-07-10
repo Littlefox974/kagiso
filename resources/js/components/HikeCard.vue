@@ -37,7 +37,7 @@ export default {
         position: absolute;
         margin-left: 10%;
         margin-top: 10%;
-        font-size: 17px;
+        font-size: medium;
         font-weight: 300;
         letter-spacing: 0.43px;
         line-height: 20px;
@@ -48,5 +48,23 @@ export default {
         width: 100%;
         border-radius: 6px;
         filter: brightness(70%);
+    }
+
+    @media only screen and (max-width: 768px) {
+        h1 {
+            font-size: medium;
+            font-weight: 300;
+            letter-spacing: 0.43px;
+            line-height: 20px;
+        }
+
+        h4 {
+            white-space: initial;
+            padding-right: 10%;
+        }
+
+        .hike-card {
+            max-width: 70%;
+        }
     }
 </style>

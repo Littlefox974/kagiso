@@ -1,9 +1,9 @@
 <template>
-    <div class="row justify-content-end" style="margin: 5% 0 5% 0;">
-        <div class="col-md-7">
+    <div class="row justify-content-end footer">
+        <div class="col-md-7 offset-sm-1">
             <img class="logo" src="img/logo_black.svg" alt="logo"/>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 offset-sm-1">
             <p>Sitemap</p>
             <ul class="list-unstyled">
                 <li>Home</li>
@@ -11,7 +11,7 @@
                 <li>Discover</li>
             </ul>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 offset-sm-1">
             <p> Contact</p>
             <ul class="list-unstyled">
                 <li>123 rue bidon</li>
@@ -47,6 +47,16 @@
 
     .SiteMap {
         margin-left: 20%;
+    }
+
+    .footer {
+        margin: 5% 0 5% 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .footer {
+            margin: 5% 0 3% 0;
+        }
     }
 </style>
 

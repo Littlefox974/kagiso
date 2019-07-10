@@ -12,8 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
-    <body>
-        <div id="app" class="container" style="width: 1440px; max-width:1440px">
+    <body style="overflow-x: hidden">
+        <div id="app" class="container px-0" style="max-width: 1440px;">
             <page-header></page-header>
             <section-1 id="section1"></section-1>
             <hikes-list></hikes-list>

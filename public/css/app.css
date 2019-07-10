@@ -11130,6 +11130,15 @@ a.text-dark:focus {
   }
 }
 
+* {
+  font-family: "SF Pro Display";
+}
+
+.container {
+  max-width: 1440px !important;
+  padding: 0;
+}
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -11137,8 +11146,7 @@ a.text-dark:focus {
 }
 
 .underlined-link {
-  font-family: "SF Pro Display";
-  font-size: 24px;
+  font-size: x-large;
   font-weight: bold;
   letter-spacing: 0.61px;
   line-height: 29px;
@@ -11151,14 +11159,12 @@ a.text-dark:focus {
 
 h1 {
   color: #FFFFFF;
-  font-family: "SF Pro Display";
   font-weight: 300;
   letter-spacing: 0.43px;
 }
 
 h2 {
-  font-family: "SF Pro Display";
-  font-size: 18px;
+  font-size: medium;
   font-weight: 300;
   color: #FC4748;
   letter-spacing: 0.45px;
@@ -11167,7 +11173,6 @@ h2 {
 
 h3 {
   color: #000000;
-  font-family: "SF Pro Display";
   font-size: 46px;
   font-weight: 900;
   letter-spacing: 1.16px;
@@ -11178,8 +11183,7 @@ h4 {
   height: 38px;
   width: 280px;
   color: #FFFFFF;
-  font-family: "SF Pro Display";
-  font-size: 32px;
+  font-size: xx-large;
   font-weight: 900;
   letter-spacing: 0.81px;
   line-height: 38px;
@@ -11187,8 +11191,7 @@ h4 {
 
 p {
   color: #6F7072;
-  font-family: "SF Pro Display";
-  font-size: 18px;
+  font-size: medium;
   font-weight: 500;
   letter-spacing: 0.45px;
   line-height: 30px;
