@@ -1,8 +1,79 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Main page
+* {
+    font-family: "SF Pro Display";
+}
+
+.container {
+    max-width: 1440px !important;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.underlined-link {
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 0.61px;
+    line-height: 29px;
+    border-bottom: solid $rouge-kagiso;
+    width: max-content;
+    padding-bottom: 10px;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-weight: 300;
+	letter-spacing: 0.43px;
+}
+
+h2 {	
+    font-size: medium;	
+    font-weight: 300;
+    color: $rouge_kagiso;
+    letter-spacing: 0.45px;	
+    line-height: 21px;
+}
+
+h3 {
+    color: #000000;
+    font-size: 46px;
+    font-weight: 900;
+    letter-spacing: 1.16px;
+    line-height: 55px;
+}
+
+h4 {
+	height: 38px;
+	width: 280px;
+	color: #FFFFFF;
+	font-size: xx-large;
+	font-weight: 900;
+	letter-spacing: 0.81px;
+	line-height: 38px;
+}
+
+
+p {
+    color: #6F7072;
+    font-size: medium;
+    font-weight: 500;
+    letter-spacing:0.45px;
+    line-height: 30px;
+}
+
+a, a:link, a:visited, a:hover, a:focus, a:active{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
