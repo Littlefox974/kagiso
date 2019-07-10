@@ -58,3 +58,7 @@ L'application est à présent prête à être servie en exécutant
 ```
 php artisan serve
 ```
+
+## PS.
+
+La dernière randonnée est un Lorem Ipsum. C'est normal, c 'est la dernière randonée à avoir été générée lors du seed.
