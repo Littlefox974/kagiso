@@ -5,7 +5,7 @@
 Cloner le dépôt :
 
 ```
-git clone linktogithubrepo.com/ Kagiso
+git clone https://github.com/Littlefox974/kagiso Kagiso
 cd Kagiso
 ```
 
