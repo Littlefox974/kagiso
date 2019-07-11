@@ -42,7 +42,7 @@ export default {
 @import "~@/app.scss";
 .menu-lg{
   position: absolute;
-  right: 10px;
+  right: 16%;
   color: white;
   top: 6%;
   
